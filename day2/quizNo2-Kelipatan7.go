@@ -3,9 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	for i := 1; i <= 100; i++ {
-		if i%7 == 0 {
-			fmt.Printf("%d adalah bilangan kelipatan 7\n", i)
-		}
+	var input int
+	fmt.Print("Ketikkan nilai input: ")
+	fmt.Scanln(&input)
+
+	if input%7 == 0 {
+		fmt.Println(input, "adalah bilangan kelipatan 7")
+	} else {
+		fmt.Println(input, "bukan bilangan kelipatan 7")
 	}
 }
