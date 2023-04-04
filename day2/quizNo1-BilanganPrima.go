@@ -23,7 +23,12 @@ func main() {
 	fmt.Scan(&n)
 	if isPrime(n) {
 		fmt.Printf("%d adalah bilangan prima\n", n)
+		fmt.Println("Program selesai. Tekan tombol enter untuk keluar.")
+		fmt.Scanln()
 	} else {
 		fmt.Printf("%d bukan bilangan prima\n", n)
+		fmt.Println("Program selesai. Tekan tombol enter untuk keluar.")
+		fmt.Scanln()
 	}
+
 }
